@@ -39,7 +39,7 @@ class Route implements RouteAttribute
      */
     public function __construct(
         public string $method,
-        public string $pattern,
+        public string $pattern = '',
         public ?string $name = null,
         string ...$middlewares
     ) {

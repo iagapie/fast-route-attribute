@@ -15,7 +15,7 @@ final class Post extends Route
      * @param string|null $name
      * @param string ...$middlewares
      */
-    public function __construct(string $pattern, ?string $name = null, string ...$middlewares)
+    public function __construct(string $pattern = '', ?string $name = null, string ...$middlewares)
     {
         parent::__construct(self::POST, $pattern, $name, ...$middlewares);
     }
